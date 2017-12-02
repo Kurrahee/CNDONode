@@ -18,6 +18,7 @@ cd CNDONode
 systemctl status DeepOniond
 
 如果出现如下的提示，则表示服务已经在运行。
+![Aaron Swartz](https://github.com/Kurrahee/CNDONode/blob/master/img/daemon_status.png)
 
 ### 防火墙设置 ###
 需要开启17571端口
