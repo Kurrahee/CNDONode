@@ -20,7 +20,7 @@ Centos 7.
         systemctl status DeepOniond DOProxy
 
 如果出现如下的提示，则表示服务已经在运行。
-![Aaron Swartz](https://github.com/Kurrahee/CNDONode/blob/master/img/service_status.png)
+![Aaron Swartz](https://github.com/Kurrahee/CNDONode/blob/master/img/service-status.png)
 
 ### 启动和停止 ###
 *   启动
