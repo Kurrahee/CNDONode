@@ -24,6 +24,7 @@ else
 fi
 
 yes | cp ./DeepOniond /usr/bin
+yes | cp ./do-proxy /usr/bin
 yes | cp ./DeepOniond.service /etc/systemd/system/
 
 log "启动DeepOniond"
