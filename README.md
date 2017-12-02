@@ -6,13 +6,21 @@ Centos 7.
 
 ### 安装步骤 ###
 *   安装Git,如果已经有了可以忽略
-    > yum -y install git
+
+        yum -y install git
 
 *   下载安装包
-    > git clone https://github.com/Kurrahee/CNDONode.git
+
+        git clone https://github.com/Kurrahee/CNDONode.git
 
 *   安装
-    > ./CNDONode/install.sh
+
+        ./CNDONode/install.sh
+
+*   防火墙设置，开启17571端口
+
+        firewall-cmd --permanent --zone=public --add-port=17571/tcp
+        systemctl restart firewalld
 
 ### 查看服务启动情况 ###
 安装完之后，服务就已经启动了，可以用下面这个命令查看
@@ -24,21 +32,18 @@ Centos 7.
 
 ### 启动和停止 ###
 *   启动
-    > ./CNDONode/start.sh
+
+        ./CNDONode/start.sh
+
 *   停止
-    > ./CNDONode/stop.sh
+
+        ./CNDONode/stop.sh
 
 ### 配置文件的路径 ###
         ~/.DeepOnion/DeepOnion.conf
 
 ### 最大连接数 ###
 缺省的最大连接数是200，可以在~/.DeepOnion/DeepOnion.conf中修改maxconnections参数
-
-### 防火墙设置 ###
-需要开启17571端口
-
-        firewall-cmd --permanent --zone=public --add-port=17571/tcp
-        systemctl restart firewalld
 
 ### 在本地钱包的配置文件中加入这个节点 ###
 打开本地计算机上的钱包配置文件DeepOnion.conf, 加入
