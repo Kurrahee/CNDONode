@@ -1,6 +1,10 @@
 #!/bin/bash
 
 trap "exit 1" TERM
+PATH="`dirname \"$0\"`"
+PATH="`( cd \"$PATH\" && pwd )`"
+#echo "$PATH"
+
 ONIONDIR="~/.DeepOnion"
 
 log()
@@ -18,14 +22,14 @@ yum -y install boost-devel openssl-devel libevent-devel  miniupnpc-devel libdb-c
 log "更新DeepOniond"
 if [ ! -d "$ONIONDIR" ];
 then
-    cp -r .DeepOnion/ ~/
+    cp -r "$PATH/.DeepOnion" ~/
 else
-    yes | cp .DeepOnion/DeepOnion.conf $ONIONDIR
+    yes | cp "$PATH/.DeepOnion/DeepOnion.conf" $ONIONDIR
 fi
 
-yes | cp ./DeepOniond /usr/bin
-yes | cp ./do-proxy /usr/bin
-yes | cp ./DeepOniond.service /etc/systemd/system/
+yes | cp "$PATH/DeepOniond" /usr/bin
+yes | cp "$PATH/do-proxy" /usr/bin
+yes | cp "$PATH/DeepOniond.service" /etc/systemd/system/
 
 log "启动DeepOniond"
 sudo systemctl daemon-reload >/dev/null 2>&1
