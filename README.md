@@ -17,7 +17,7 @@ Centos 7
 ### 查看服务启动情况 ###
 安装完之后，服务就已经启动了，可以用下面这个命令查看
 
-    > systemctl status DeepOniond
+        systemctl status DeepOniond
 
 如果出现如下的提示，则表示服务已经在运行。
 ![Aaron Swartz](https://github.com/Kurrahee/CNDONode/blob/master/img/daemon_status.png)
