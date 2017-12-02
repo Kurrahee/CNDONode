@@ -37,6 +37,9 @@ Centos 7.
 ### 防火墙设置 ###
 需要开启17571端口
 
+        firewall-cmd --permanent --zone=public --add-port=17571/tcp
+        systemctl restart firewalld
+
 ### 在本地钱包的配置文件中加入这个节点 ###
 打开本地计算机上的钱包配置文件DeepOnion.conf, 加入
 
