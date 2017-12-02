@@ -53,4 +53,4 @@ Centos 7.
 其中207.246.xx.xx是你的VPS的IP地址
 
 打开洋葱钱包，使用缺省设置，不开启翻墙软件（proxifier和ssr都不用），连接成功后，洋葱钱包右下角的图标如下图所示。
-![Aaron Swartz](https://github.com/Kurrahee/CNDONode/blob/master/img/walle-ok.png)
+![Aaron Swartz](https://github.com/Kurrahee/CNDONode/blob/master/img/wallet-ok.png)
