@@ -17,10 +17,16 @@ Centos 7.
 ### 查看服务启动情况 ###
 安装完之后，服务就已经启动了，可以用下面这个命令查看
 
-        systemctl status DeepOniond
+        systemctl status DeepOniond DOProxy
 
 如果出现如下的提示，则表示服务已经在运行。
-![Aaron Swartz](https://github.com/Kurrahee/CNDONode/blob/master/img/daemon_status.png)
+![Aaron Swartz](https://github.com/Kurrahee/CNDONode/blob/master/img/service_status.png)
+
+### 启动和停止 ###
+*   启动
+    > ./CNDONode/start.sh
+*   停止
+    > ./CNDONode/stop.sh
 
 ### 配置文件的路径 ###
         ~/.DeepOnion/DeepOnion.conf
