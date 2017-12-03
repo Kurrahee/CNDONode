@@ -1,4 +1,4 @@
-# 在Centos 7系统中安装洋葱节点, 钱包免翻墙（[ENG](） #
+# 在Centos 7系统中安装洋葱节点, 钱包免翻墙 ([ENG](https://github.com/Kurrahee/CNDONode/blob/master/README_en.md)) #
 
 ### 所需的环境 ###
 Centos 7.

@@ -1,4 +1,4 @@
-# Setup GFW-free DeepOnion Nodes #
+# Setup GFW-free DeepOnion Nodes ([中文](https://github.com/Kurrahee/CNDONode/blob/master/README_en.md))#
 GFW is big barrier for DeepOnion users from China to sync the wallet in a convenient manner. 
 This repo provides a solution of how to setup DO node which can bypass the block of GFW.  
 
