@@ -12,14 +12,14 @@ log()
     echo 1>&2 "$1"
 }
 
-log "停止DeepOniond"
+log "Stop DeepOniond"
 sudo systemctl stop DeepOniond >/dev/null 2>&1
 sudo systemctl stop DOProxy >/dev/null 2>&1
 
-log "安装库文件"
+log "Install Lib"
 yum -y install boost-devel openssl-devel libevent-devel  miniupnpc-devel libdb-cxx-devel >/dev/null 2>&1
 
-log "更新DeepOniond"
+log "Install DeepOniond"
 if [ ! -d "$ONIONDIR" ];
 then
     cp -r "${PWD}/.DeepOnion" ~/
@@ -32,7 +32,7 @@ yes | cp "${PWD}/do-proxy" /usr/bin
 yes | cp "${PWD}/DeepOniond.service" /etc/systemd/system/
 yes | cp "${PWD}/DOProxy.service" /etc/systemd/system/
 
-log "启动DeepOniond"
+log "Start DeepOniond"
 sudo systemctl daemon-reload >/dev/null 2>&1
 sudo systemctl enable DeepOniond >/dev/null 2>&1
 sudo systemctl enable DOProxy >/dev/null 2>&1
